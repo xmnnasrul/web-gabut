@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="components/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="components/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="components/node_modules/simplycountdown.js/css/simplyCountdown.theme.default.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <main>
+        <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+        <h1>Lorem & ipsum dolor.</h1>
+        <p>akan melangsungkan resepsi pernikahan dalam:</p>
+        <div class="simply-countdown"></div>
+        <a href="#undangan" class="btn btn-lg mt-4">lihat undangan</a>
+      </main>
+    </section>
+    <!-- nav -->
+    <nav class="navbar bg-body-tertiary sticky-top navbar-expand-md my-nav" >
+      <div class="container">
+        <a class="navbar-brand" href="#">Lorem, ipsum.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbarLight"
+          aria-controls="offcanvasNavbarLight"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbarLight"
+          aria-labelledby="offcanvasNavbarLightLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLightLabel">
+             Lorem, ipsum.
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a href="#home" class="nav-link " >Home</a>
+              <a href="#info" class="nav-link" >Info</a>
+              <a href="#story" class="nav-link ">Story</a>
+              <a href="#gallery" class="nav-link ">Galery</a>
+              <a href="#rsvp" class="nav-link ">RSVP</a>
+              <a href="#gifts" class="nav-link ">Gifts</a>
+
+
+            </div>
+           
+          
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <script src="components/node_modules/simplycountdown.js/dist/simplyCountdown.min.js"></script>
+    <script src="components/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2024, // required
+        month: 4, // required
+        day: 7, // required
+        hours: 8, // Default is 0 [0-23] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "hari", plural: "hari" },
+          hours: { singular: "jam", plural: "jam" },
+          minutes: { singular: "menit", plural: "menit" },
+          seconds: { singular: "detik", plural: "detik" },
+        },
+      });
+    </script>
+  </body>
+</html>

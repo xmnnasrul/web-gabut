@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+=======
+/* thin regular semi bold bold */
+/* /* 100 400 600 700 work sans  */
+
+  @import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+>>>>>>> aca71cb5778317ab9ca5740b00aba48bc015e771
 
 :root {
   --pink: #f14e95;
